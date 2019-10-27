@@ -1,0 +1,102 @@
+---
+top: 2
+category: memo
+tags:
+  - database
+  - sql
+date: 2019-10-27
+title: SQL 筆記
+lang: zh-TW
+---
+
+第一篇 部落格測試文章
+
+![](https://img.shields.io/github/license/meteorlxy/vuepress-theme-meteorlxy.svg?style=flat)
+
+<!-- more -->
+
+::: tip
+如果在這有看到什麼問題，可以在下方留言
+又或者可以在 [Github](https://github.com/kevinypfan) 發布 Issue 或者 PR 。
+:::
+
+## SELECT
+
+```sql
+SELECT * FROM db_table;
+```
+
+### DISTINCT
+
+```sql
+SELECT DISTINCT data_key * FROM table_name;
+```
+
+table_name 裡，data_key 有哪些不同 key 的集合。
+
+ex: [a, a, a, b, b, d, e] => {a, b, d, e}
+
+### WHERE
+
+```sql
+SELECT column_1, column_2....
+From table_name
+WHERE conditions;
+```
+
+| OPERATOR | DESCRPTION     |
+| -------- | -------------- |
+| =        | 等於           |
+| >        | 大於           |
+| <        | 小於           |
+| >=       | 大於等於       |
+| <=       | 小於等於       |
+| <> or != | 不等於         |
+| AND      | 邏輯運算子 AND |
+| OR       | 邏輯運算子 OR  |
+
+ex:
+
+```sql
+SELECT last_name, first_name
+FROM customer
+WHERE first_name = 'Jamie' AND last_name = 'Rice';
+```
+
+### COUNT
+
+有幾筆資料在此 table 內。
+
+```sql
+SELECT COUNT(*) FROM table;
+```
+
+資料表內，有幾個不同的 Keys
+
+```sql
+SELECT COUNT(DISTINCT column) FROM table;
+```
+
+### LIMIT
+
+從 table_name 取 10 筆資料
+
+```sql
+SELECT * FROM table_name LIMIT 10;
+```
+
+### ORDER BY
+
+預設為 ASC 排序由小到大
+
+```sql
+SELECT first_name, last_name FROM table_name
+ORDER BY first_name ASC;
+```
+
+此為倒序
+
+```sql
+SELECT first_name, last_name FROM table_name
+ORDER BY first_name DESC;
+```

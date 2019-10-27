@@ -1,0 +1,14 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "vuepress": "^1.2.0",
+    "vuepress-theme-meteorlxy": "^1.6.0"
+  },
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src --dest dist"
+  }
+}
