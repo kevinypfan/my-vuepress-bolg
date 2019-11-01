@@ -5,7 +5,7 @@ tags:
   - nginx
 date: 2019-11-01
 title: Nginx Configuration
-lang: zh-TW
+lang: en-US
 vssue-id: 2
 ---
 

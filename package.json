@@ -10,5 +10,8 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src --dest dist"
+  },
+  "devDependencies": {
+    "vuepress-plugin-seo": "^0.1.2"
   }
 }
