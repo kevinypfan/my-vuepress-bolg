@@ -1,11 +1,10 @@
 ---
-top: 2
 category: memo
 tags:
   - nginx
 date: 2019-11-01
 title: Nginx Configuration
-lang: en-US
+lang: zh-Hant-TW
 vssue-id: 2
 ---
 
